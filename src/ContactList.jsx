@@ -23,7 +23,6 @@ const ContactList = (props) => {
   </table>
 );
 }
-    
 
 export default ContactList
 
