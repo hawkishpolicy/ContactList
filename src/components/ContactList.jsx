@@ -1,7 +1,7 @@
 import React from 'react'
+import {ContactRow} from './';
 
 const ContactList = (props) => {
-  console.log(props)
   return (
   <table>
       <tbody>
@@ -12,11 +12,9 @@ const ContactList = (props) => {
         </tr>
         {
           props.contacts.map(contact => {
-            return <tr key = {`droid ID is: ${contact.id}`}>
-              <td>{contact.name}</td>
-              <td>{contact.phone}</td>
-              <td>{contact.email}</td>
-            </tr>;
+            console.log(contact)
+            console.log(props.contacts)
+            return <ContactRow contact = {contact} key = {`droid ID is: ${contact.id}`}></ContactRow>
           })
         }
       </tbody>
