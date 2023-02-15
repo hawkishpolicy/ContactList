@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ContactList = (props) => {
+  console.log(props)
   return (
   <table>
       <tbody>
