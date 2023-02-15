@@ -25,7 +25,7 @@ const Main = () => {
         </tr>
         
         {contacts.map(contact => {
-        return <tr>
+        return <tr key = {`droid ID is: ${contact.id}`}>
           <td>{contact.name}</td>
           <td>{contact.phone}</td>
           <td>{contact.email}</td>
